@@ -1,10 +1,11 @@
 import random
 import string
 
-#TESTING LINE. THIS SHOULD BE BLATANTLY VISIBLE!
+#TESTING LINE. THIS SHOULD BE BLATANTLY VISIBLE! hello
 
 # Function to get user input (skeleton)
 def get_user_input(prompt, min_value, max_value):
+    # Hello
     # Implement logic to get valid user input within a range
     pass
 
