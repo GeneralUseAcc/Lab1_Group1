@@ -16,6 +16,13 @@ def generate_password(length, num_letters, num_digits, num_specials):
 
 # Main function (skeleton)
 def main():
+    # In order: Password length, number of letters, number of digits
+    # and number of special characters in password
+    length = 0
+    num_letters = 0
+    num_digits = 0
+    num_specials = 0
+
     print("\n--- Secure Password Generator ---\n")
 
     # Step 1: Get user inputs for password length and character distribution
