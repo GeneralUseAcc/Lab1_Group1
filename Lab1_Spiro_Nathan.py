@@ -20,7 +20,7 @@ def get_user_input(prompt, min_value, max_value):
             # Conditions regarding if min/max value parameters are not met properly
             if max_value < output:
                 print(f"You've exceeded the character limit. Please try again within {min_value} and {max_value}.")
-            if output < min_value:
+            elif output < min_value:
                 print(f"The entered number is too low. Please try again within {min_value} and {max_value}.")
 
             else:
