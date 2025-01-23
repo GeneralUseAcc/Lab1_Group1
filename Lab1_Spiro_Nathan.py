@@ -1,10 +1,14 @@
+# Date: January 23rd, 2025
+# Authors: Spiro Kontossoros, Nathan Sheldrake
+# Student IDs: 100843569 (Kontossoros), 100964827 (Sheldrake)
+# Description: A secure password generator that allows the user
+# to determine their prefered password length and prefered number of
+# different characters (letters, numbers, special punctuation characters).
+
 import random
-import string
 
-#TESTING LINE. THIS SHOULD BE BLATANTLY VISIBLE! hello. NEW TEST JAN 23
-
-# Function to get and validate user input
 def get_user_input(prompt, min_value, max_value):
+    """Function to get and validate user input"""
     # Boolean for checking if input is an integer
     input_valid = False
 
@@ -31,8 +35,9 @@ def get_user_input(prompt, min_value, max_value):
 
     return output
 
-# Function to generate a password
+
 def generate_password(length, num_letters, num_digits, num_specials):
+    """Function to generate a password"""
     # String variable for the password
     password = ""
     # Set of letters to be randomly added to the password
@@ -43,7 +48,8 @@ def generate_password(length, num_letters, num_digits, num_specials):
     # Set of special characters to be randomly added to the password
     special_characters = "#$%&'\"()*+,-./:;<=>?@[]^_`{|}~"
 
-    #
+    # Loops for adding specified amounts of random
+    # letters/numbers/special characters into password
     for i in range(num_letters):
         random_letter = random.choice(letters)
         password += random_letter
@@ -56,17 +62,19 @@ def generate_password(length, num_letters, num_digits, num_specials):
         password += random_special
 
     # Turns unshuffled password into a list to shuffle
-    # Turns it back to a string afterwards
+    # Turns it back to a string afterwards.
     unshuffled_password = list(password)
     random.shuffle(unshuffled_password)
     result = ''.join(unshuffled_password)
     password = result
 
-    # Displays the generated password
-    print(f"Your Password: {password}")
+    return password
 
-# Main function
+
 def main():
+    """Main function"""
+    # Variable for final password
+    secure_password = ""
 
     print("\n--- Secure Password Generator ---\n")
     # Validates if password length matches sum of all requested character counts
@@ -79,8 +87,10 @@ def main():
     num_digits = 0
     num_specials = 0
 
+
     # While condition running until character sum matches password length
     while not password_length_equals_character_sum:
+        # Step 1: Recieve user inputs
         # In order: Password length, number of letters, number of digits
         # and number of special characters in password
         length = get_user_input("Enter the total length of the password", 8, 16)
@@ -98,12 +108,17 @@ def main():
 
 
     # Step 3: Generate the password
-
-    generate_password(length, num_letters, num_digits, num_specials)
+    secure_password = generate_password(length, num_letters, num_digits, num_specials)
 
     # Step 4: Display the generated password
+    print(secure_password)
 
     # Step 5: Save password to file
+    # This will write over any existing password/content in
+    # The Secure-Password.txt file
+    password_file = open("Secure-Password.txt", "w")
+    password_file.write(f"{secure_password}")
+    password_file.close()
 
 # Entry point of the script
 if __name__ == "__main__":
