@@ -114,8 +114,8 @@ def main():
     print(secure_password)
 
     # Step 5: Save password to file
-    # This will write over any existing password/content
-    # In the Secure-Password.txt file
+    # This will write over any existing password/content in
+    # The Secure-Password.txt file
     password_file = open("Secure-Password.txt", "w")
     password_file.write(f"{secure_password}")
     password_file.close()
