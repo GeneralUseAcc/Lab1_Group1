@@ -43,8 +43,6 @@ def generate_password(num_letters, num_digits, num_specials):
     # Set of letters to be randomly added to the password
     letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
-    # Range of numbers (0 to 9) will be set within its own loop.
-
     # Set of special characters to be randomly added to the password
     special_characters = "#$%&'\"()*+,-./:;<=>?@[]^_`{|}~"
 
