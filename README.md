@@ -1,6 +1,6 @@
 # INFT 1207: Software Testing and Automation
 
-# This is about Lab 0.
+## Overview
 
 ## Random Secure Password Generator
 
