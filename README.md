@@ -4,7 +4,7 @@
 
 ## Random Secure Password Generator
 
-### Lab Details
+### <ins>Lab Details</ins>
 
 **Lab Title:** Random Password Generator  
 **Course:**    INFT 1207
