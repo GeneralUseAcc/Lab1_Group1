@@ -1,10 +1,10 @@
 # INFT 1207: Software Testing and Automation
 
-## Overview
+## <ins>Overview</ins>
 
 ## Random Secure Password Generator
 
-### <ins>Lab Details</ins>
+### Lab Details:
 
 **Lab Title:** Random Password Generator  
 **Course:**    INFT 1207
