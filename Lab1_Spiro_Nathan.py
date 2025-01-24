@@ -36,7 +36,7 @@ def get_user_input(prompt, min_value, max_value):
     return output
 
 
-def generate_password(length, num_letters, num_digits, num_specials):
+def generate_password(num_letters, num_digits, num_specials):
     """Function to generate a password"""
     # String variable for the password
     password = ""
@@ -90,7 +90,7 @@ def main():
 
     # While condition running until character sum matches password length
     while not password_length_equals_character_sum:
-        # Step 1: Recieve user inputs
+        # Step 1: Receive user inputs
         # In order: Password length, number of letters, number of digits
         # and number of special characters in password
         length = get_user_input("Enter the total length of the password", 8, 16)
@@ -108,7 +108,7 @@ def main():
 
 
     # Step 3: Generate the password
-    secure_password = generate_password(length, num_letters, num_digits, num_specials)
+    secure_password = generate_password(num_letters, num_digits, num_specials)
 
     # Step 4: Display the generated password
     print(secure_password)
