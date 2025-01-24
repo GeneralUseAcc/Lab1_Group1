@@ -113,7 +113,7 @@ def main():
     # Step 4: Display the generated password
     print(secure_password)
 
-    # Step 5: Save password to file
+    # Step 5: Save the password to file
     # This will write over any existing password/content in
     # The Secure-Password.txt file
     password_file = open("Secure-Password.txt", "w")
