@@ -2,8 +2,6 @@
 
 ## <ins>Overview</ins>
 
-## Random Secure Password Generator
-
 ### Lab Details:
 
 **Lab Title:** Random Password Generator  
