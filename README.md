@@ -15,7 +15,7 @@ Create a Python program that generates a secure random password based on user in
 
 ## Features
 
-- Customizable password length (minimum 8 characters, maximum 12 characters).
+- Customizable password length (minimum 8 characters, maximum 16 characters).
 - User specifies the number of letters, digits, and special characters.
 - Random distribution of characters.
 - Input validation and error handling.
